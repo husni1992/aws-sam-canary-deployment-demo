@@ -17,6 +17,10 @@ lint = true
 capabilities = "CAPABILITY_IAM"
 confirm_changeset = true
 resolve_s3 = true
+s3_prefix = "sam-app-canary-deployment-demo"
+region = "eu-west-1"
+profile = "Husny-Admin"
+image_repositories = []
 
 [default.package.parameters]
 resolve_s3 = true
@@ -29,3 +33,13 @@ warm_containers = "EAGER"
 
 [default.local_start_lambda.parameters]
 warm_containers = "EAGER"
+
+[dev.deploy.parameters]
+stack_name = "sam-app-canary-deployment-demo"
+resolve_s3 = true
+s3_prefix = "sam-app-canary-deployment-demo"
+region = "eu-west-1"
+profile = "Husny-Admin"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
