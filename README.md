@@ -1,0 +1,1 @@
+Simple SAM demo with lambda, API Gateway and deploy Canary10Percent10Minutes with CodeDeploy :)
