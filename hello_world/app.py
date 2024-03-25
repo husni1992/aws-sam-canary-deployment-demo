@@ -4,6 +4,6 @@ def lambda_handler(event, context):
     return {
         "statusCode": 200,
         "body": json.dumps({
-            "message": "Hello world from AWS Sam v2!",
+            "message": "Hello world from AWS Sam!",
         }),
     }
